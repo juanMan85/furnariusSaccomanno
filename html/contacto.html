@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furnariusLeathergoods</title>
+    <link rel="stylesheet" href="../css/estiloDos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Berkshire+Swash&family=Lobster&display=swap" rel="stylesheet">
+  
+</head>
+<body class="bodyFlex bodyContacto">
+   
+    <header class="header">
+          <div class="cabezaFlex">
+                <div class="titulo">
+                    <h1>Furnarius Leather Goods</h1><!-- TITULO DE PAGINA -->
+                </div>
+            
+                <img src="../Imagenes/rufous-hornero.png" alt=""class="icono"> <!--icono de pagina-->
+         </div>
+
+            
+            <nav>
+                 <ul>
+                    <li><a href="../index.html"> Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                 </ul>
+                     
+                 
+            </nav>
+   </header>
+    <main>
+        <div class="form">
+            <div class="sideForm">
+                <h3 class="contacto contacto__texto">Ponte en contacto con nosotros</h3>
+                <p class="contacto contacto__texto contacto__texto--italica">Whatsapp: 11-3422-0010</p>
+                <h4 class="contacto contacto__texto">E-mail</h4>
+                <p class="contacto contacto__texto contacto__texto--italica">furnariusLeathergoods@gmail.com</p>
+            </div>
+            
+
+
+             <!-- COMIENZO DE FORMULARIO-->
+            <form>
+                <fieldset class="cuadradoContacto"> <!-- RECUADRO y llamada a clase-->
+                    
+                    <!-- INGRESOS NOMBRE Y CORREO-->
+                    <input type="text" name="Nombre" placeholder="Nombre"><br>
+                    <input type="email" name="email" placeholder="nombre@email.com"><br>
+                    <!--SELECCION DE SEXO TIPO RADIO-->
+                    <div>Hombre</div>
+                    <input type="radio" name="sexo" value="Hombre">
+                    <div>Mujer</div>
+                    <input type="radio" name="sexo" value="Mujer"><br>
+                    <!-- INGRESO DE CONSULTA DEL USUARIO-->
+                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="ingrese su consulta"></textarea><br>
+                    <!--CHECKBOX DE NOTIFICACIONES-->
+                    <div>Deseo recibir notificaciones de ofertas</div>
+                    <input type="checkbox" name="acepta" value="1"><br>
+                    <!-- BOTON ENVIAR DATOS-->
+                    <input type="submit" value="Enviar">
+                    <!-- BOTON LIMPIAR DATOS-->
+                    <input type="reset" value="Limpiar">
+
+                </fieldset> <!--FIN DE RECUADRO-->
+            </form> 
+               <!-- FIN DE FORMULARIO-->
+        </div>
+
+    </main>
+    <footer>
+        
+        <h5 class="footer__pie footer__pie--text">FurnariusLeathergoods 2021</h5>
+        <img src="../Imagenes/instagram.png" alt="" class="footer__pie footer__pie--icono">
+               
+    </footer>
+   
+   
+</body>
+</html>
