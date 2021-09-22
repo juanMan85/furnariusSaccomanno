@@ -9,32 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Berkshire+Swash&family=Lobster&display=swap" rel="stylesheet">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   
 </head>
 <body class="bodyFlex bodyContacto">
    
-    <header class="header">
-          <div class="cabezaFlex">
-                <div class="titulo">
-                    <h1>Furnarius Leather Goods</h1><!-- TITULO DE PAGINA -->
-                </div>
-            
-                <img src="../Imagenes/rufous-hornero.png" alt=""class="icono"> <!--icono de pagina-->
-         </div>
+    <header>
 
-            
-            <nav>
-                <ul>
-                    <li><a href="../index.html"><img src="../iconos-nav/home.png" alt=""class="iconoNav"> Inicio</a></li>
-                    <li><a href="productos.html"><img src="../iconos-nav/producto.png" alt=""class="iconoNav">Productos</a></li>
-                    <li><a href="galeria.html"><img src="../iconos-nav/galeria.png" alt=""class="iconoNav">Galeria</a></li>
-                    <li><a href="nosotros.html"><img src="../iconos-nav/nosotros.png" alt=""class="iconoNav">Nosotros</a></li>
-                    <li><a href="contacto.html"><img src="../iconos-nav/contacto.png" alt=""class="iconoNav">Contacto</a></li>
-                 </ul>
-                     
-                 
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/rufous-hornero.png" alt="" width="30" height="24">
+                </a>
+
+                <a class="navbar-brand text-warning titulo-fuente" href="../index.html">Furnarius Leather goods</a>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                            <a class="nav-link"  href="../index.html">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="contacto.html">Contacto</a>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
    </header>
+    
     <main>
         <div class="form">
             <div class="sideForm">
@@ -46,31 +62,23 @@
             
 
 
-             <!-- COMIENZO DE FORMULARIO-->
-            <form>
-                <fieldset class="cuadradoContacto"> <!-- RECUADRO y llamada a clase-->
-                    
-                    <!-- INGRESOS NOMBRE Y CORREO-->
-                    <input type="text" name="Nombre" placeholder="Nombre"><br>
-                    <input type="email" name="email" placeholder="nombre@email.com"><br>
-                    <!--SELECCION DE SEXO TIPO RADIO-->
-                    <div>Hombre</div>
-                    <input type="radio" name="sexo" value="Hombre">
-                    <div>Mujer</div>
-                    <input type="radio" name="sexo" value="Mujer"><br>
-                    <!-- INGRESO DE CONSULTA DEL USUARIO-->
-                    <textarea name="textarea" id="" cols="30" rows="10" placeholder="ingrese su consulta"></textarea><br>
-                    <!--CHECKBOX DE NOTIFICACIONES-->
-                    <div>Deseo recibir notificaciones de ofertas</div>
-                    <input type="checkbox" name="acepta" value="1"><br>
-                    <!-- BOTON ENVIAR DATOS-->
-                    <input type="submit" value="Enviar">
-                    <!-- BOTON LIMPIAR DATOS-->
-                    <input type="reset" value="Limpiar">
+             <!-- COMIENZO DE FORMULARIO CON BOOTSTRAP-->
+             <form action="" class="container bg-dark text-light col-sm-5 ">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="btn-group " role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-primary ">Enviar</button>  
+                  </div>
+             </form>
 
-                </fieldset> <!--FIN DE RECUADRO-->
-            </form> 
-               <!-- FIN DE FORMULARIO-->
+           
+             <!-- FIN DE FORMULARIO-->
         </div>
 
     </main>
@@ -81,6 +89,7 @@
                
     </footer>
    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
    
 </body>
 </html>
