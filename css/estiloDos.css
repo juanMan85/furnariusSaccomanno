@@ -83,6 +83,10 @@ footer{
 
 
 /*GALERIA DE IMAGENES*/
+.galeria{
+    margin: 20px;
+
+}
 .galeriaGrilla{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -335,6 +339,10 @@ textarea:hover{
 
 @media (min-width: 250px)and (max-width: 420px) {
 
+    .titulo-fuente{
+        font-family: Berkshire Swash;
+        letter-spacing: 1px;
+    }
 
     /*productos*/
     .grilla{
