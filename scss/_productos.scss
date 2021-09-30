@@ -1,0 +1,218 @@
+/*pagina PRODUCTOS CON GRID*/
+.grilla{
+    max-width: 90vw;
+    max-height: auto;
+    display: grid;
+    margin: auto;
+    margin-top: 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas:"foto1  texto1 foto4  texto4"
+                        "boton1 boton2 boton4 boton3"
+                        "texto2 foto2  texto3 foto3 ";          
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center; 
+    color:$color-texto-oscuro; 
+  
+}
+    .grilla__texto{
+        align-self: center;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .grilla__texto:hover{
+        text-shadow:3px 3px 5px $color-claro;
+    }
+
+    .caja1{  
+        justify-content: center;
+        grid-area: foto1;   
+    }
+    .boton1{
+        grid-area: boton1;
+        align-self: flex-start;
+    }
+    .grilla__texto--1{
+        grid-area: texto1;
+    }
+    .caja2{
+        grid-area: foto2;
+    }
+    .boton2{
+        grid-area: boton2;
+        align-self: flex-end;
+    }
+    .grilla__texto--2{
+        grid-area: texto2;
+    }
+    .caja3{
+        grid-area: foto3;
+    }
+    .boton3{
+        grid-area: boton3;
+        align-self: flex-end;
+    }
+    .grilla__texto--3{
+        grid-area: texto3;
+    }
+    .caja4{
+        grid-area: foto4;
+    }
+    .boton4{
+        grid-area: boton4;
+        align-self: flex-start;   
+    }
+    .grilla__texto--4{
+        grid-area: texto4;   
+    }
+
+.boton{
+    padding: 6px;
+    font-size: 15px;
+    font-family:$estilo-fuente-general;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    background-color: $boton-bg-color;
+    color: $color-claro;
+    border-top: 4px groove $boton-color-borde;
+    border-bottom: 3px groove $boton-color-borde;
+    margin: 5px;
+}
+    .boton:hover{
+        border-top: 4px groove $color-borde-boton-hover;
+        border-bottom: 4px groove $color-borde-boton-hover;
+        background-color: $boton-bg-color;
+    }
+ 
+.producto{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: $estilo-fuente-general;
+    text-transform: uppercase;
+}
+
+/*FIN DE PRODUCTOS CON GRID*/
+
+/*Responsive*/
+
+@media only screen and (max-width: 375px) {
+
+    /*productos*/
+    .grilla{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "boton1 boton1"
+                            "foto2 texto2"
+                            "boton2 boton2"
+                            "foto3 texto3"
+                            "boton3 boton3"
+                            "foto4 texto4"
+                            "boton4 boton4";          
+        align-items: flex-start; 
+        gap: 10px;
+        
+    }
+    .grilla__texto{
+        margin-right: 10px;
+        font-size: 16px;
+    }
+     
+    .boton{
+        padding: 4px;
+        margin: 5px;
+    }
+    .boton2{
+        align-self: flex-start;
+    }
+    .boton3{
+        align-self: flex-start;
+    }
+   
+  
+}
+
+
+@media screen and (max-width: 560px) {
+   
+    /*productos*/
+ 
+    .grilla{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "boton1 boton1"
+                            "foto2 texto2"
+                            "boton2 boton2"
+                            "foto3 texto3"
+                            "boton3 boton3"
+                            "foto4 texto4"
+                            "boton4 boton4";          
+        align-items: flex-start; 
+        gap: 10px;
+       
+    }
+    .grilla__texto{
+        margin-right: 18px;
+        font-size: 18px;
+    }
+     
+    .boton{
+        padding: 4px;
+        margin: 5px;
+    }
+    .boton2{
+        align-self: flex-start;
+    }
+    .boton3{
+        align-self: flex-start;
+    }   
+
+}
+
+@media only screen and (max-width: 900px) {
+         /*productos*/
+ 
+    .grilla{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "boton1 boton1"
+                            "foto2 texto2"
+                            "boton2 boton2"
+                            "foto3 texto3"
+                            "boton3 boton3"
+                            "foto4 texto4"
+                            "boton4 boton4";          
+        align-items: flex-start; 
+        gap: 10px;
+        
+    }
+    .grilla__texto{
+        margin-right: 18px;
+        font-size: 21px;
+    }
+     
+    .boton{
+        padding: 4px;
+        margin: 5px;
+    }
+    .boton2{
+        align-self: flex-start;
+    }
+    .boton3{
+        align-self: flex-start;
+    }
+}
+
+
+
+

@@ -1,0 +1,108 @@
+/* CUADRO DE PAGINA CONTACTO*/
+.bodyContacto{
+    background-image: url(../Imagenes/taller3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+input{
+    background-color:$color-fondo;
+    border: 3px solid $boton-color-borde;   
+}
+input:hover{
+   background:$color-fondo;
+}
+textarea:hover{
+    background-color: $color-fondo;
+}
+
+ form{
+     padding: 8px;
+     border-radius: 6px;
+     box-shadow: 2px 2px 4px $sombra;
+ }
+ .sideForm{
+     display: flex;
+     flex-direction: column;  
+     align-items : center;   
+ }
+ 
+
+/*bem*/
+.contacto{
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px $color-fondo; 
+}
+
+.contacto__texto{
+    font-size: 30px;
+    font-family: $estilo-fuente-general;
+    margin: 10px;
+    color: $color-texto-oscuro;
+    animation-name: MostrarTexto;
+    animation-duration: 6s;
+}
+.contacto__texto--italica{
+    font-size: 20px;
+    font-style: italic;
+    color: $color-texto-oscuro;
+}
+.contacto__texto--italica:hover{
+    color:$color-claro;
+}
+
+/*ANIMACION EN PAGINA CONTACTO*/
+@keyframes MostrarTexto {
+    from {
+    opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+/*fin de animacion*/
+
+/*Responsive*/
+
+@media (min-width: 250px)and (max-width: 420px) {
+
+    
+    .contacto__texto{
+        font-size: 25px;
+    }
+    .contacto__texto--italica{
+        font-size: 18px;
+    }
+
+}
+
+
+@media (min-width: 421px)and (max-width: 580px) {
+   
+    /* CUADRO DE PAGINA CONTACTO*/
+
+    .contacto__texto{
+        font-size: 25px;
+    }
+    .contacto__texto--italica{
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (min-width: 581px) {
+
+    /* CUADRO DE PAGINA CONTACTO*/
+
+    .contacto__texto{
+        font-size: 25px;
+    }
+    .contacto__texto--italica{
+        font-size: 18px;
+    }
+
+}
+
+
+

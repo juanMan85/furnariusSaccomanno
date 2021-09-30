@@ -1,0 +1,459 @@
+/* CUADRO DE PAGINA CONTACTO*/
+.bodyContacto {
+  background-image: url(../Imagenes/taller3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+input {
+  background-color: #664E88;
+  border: 3px solid #334756; }
+
+input:hover {
+  background: #664E88; }
+
+textarea:hover {
+  background-color: #664E88; }
+
+form {
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px #082032; }
+
+.sideForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/*bem*/
+.contacto {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #664E88; }
+
+.contacto__texto {
+  font-size: 30px;
+  font-family: Alice;
+  margin: 10px;
+  color: #212121;
+  animation-name: MostrarTexto;
+  animation-duration: 6s; }
+
+.contacto__texto--italica {
+  font-size: 20px;
+  font-style: italic;
+  color: #212121; }
+
+.contacto__texto--italica:hover {
+  color: #EEEEEE; }
+
+/*ANIMACION EN PAGINA CONTACTO*/
+@keyframes MostrarTexto {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*fin de animacion*/
+/*Responsive*/
+@media (min-width: 250px) and (max-width: 420px) {
+  .contacto__texto {
+    font-size: 25px; }
+  .contacto__texto--italica {
+    font-size: 18px; } }
+
+@media (min-width: 421px) and (max-width: 580px) {
+  /* CUADRO DE PAGINA CONTACTO*/
+  .contacto__texto {
+    font-size: 25px; }
+  .contacto__texto--italica {
+    font-size: 18px; } }
+
+@media only screen and (min-width: 581px) {
+  /* CUADRO DE PAGINA CONTACTO*/
+  .contacto__texto {
+    font-size: 25px; }
+  .contacto__texto--italica {
+    font-size: 18px; } }
+
+/*PIE DE PAGINA */
+footer {
+  display: flex;
+  justify-content: center;
+  min-height: 3vh; }
+
+.footer__pie {
+  margin-bottom: 20px;
+  margin: 20px; }
+
+.footer__pie--text {
+  font-size: 18PX;
+  font-family: Alice;
+  text-shadow: 2px 2px 3px #082032; }
+
+.footer__pie--icono {
+  max-width: 25px;
+  max-height: 25px;
+  box-shadow: 2px 2px 4px #082032;
+  border-radius: 6px; }
+
+footer {
+  background-color: #2D4059; }
+  footer h5 a {
+    text-decoration: none;
+    color: #664E88;
+    text-shadow: 2px 2px 3px #082032; }
+
+footer h5 a:hover {
+  color: #FF4C29; }
+
+/*FIN PIE DE PAGINA */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  /*altura total de pantalla*/
+  background-color: #664E88; }
+
+.bodyFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #889EAF, #506D84); }
+
+.icono {
+  margin: 30px;
+  order: 0;
+  border-radius: 15px;
+  max-height: 45px;
+  box-shadow: 2px 2px 4px #082032; }
+
+/*tipografia titulo*/
+.titulo-fuente {
+  font-family: Berkshire Swash;
+  letter-spacing: 3px; }
+
+.animacion-card {
+  animation-name: MostrarTexto;
+  animation-duration: 6s; }
+
+/*IMAGEN BACKGROUND INDEX*/
+.imagenPrincipal {
+  background-image: url(../Imagenes/hornero4.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*FIN IMAGEN BACKGROUND INDEX*/
+/*Responsive*/
+@media only screen and (max-width: 375px) {
+  .titulo-fuente {
+    font-family: Berkshire Swash;
+    letter-spacing: 1px; } }
+
+/*NOSOTROS PAGINA*/
+.mainGrid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "parrafo foto" "parrafo foto";
+  margin: 10px 50px; }
+
+.parrafo {
+  font-family: Alice;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: #664E88;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 30px;
+  height: auto;
+  border-radius: 10px;
+  grid-area: parrafo;
+  transition: all 4s; }
+
+.parrafo:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 4px 4px 7px #082032; }
+
+.imagenNosotros {
+  grid-area: foto;
+  width: 40%;
+  min-width: 300px;
+  height: auto;
+  margin-left: 45px;
+  border-radius: 0px 10px 0px 20px;
+  padding: 2px;
+  background-color: #EEEEEE;
+  transition: all 4s; }
+
+.imagenNosotros:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 4px 4px 7px #082032;
+  width: 50%; }
+
+/*FIN DE PAGINA NOSOTROS*/
+/*Responsive*/
+@media (min-width: 250px) and (max-width: 420px) {
+  .mainGrid {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "parrafo " "foto";
+    margin: auto; }
+  .parrafo {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10vh; }
+  .parrafo:hover {
+    transform: scale(1, 1.1); }
+  .imagenNosotros {
+    min-width: 75vw; } }
+
+@media (min-width: 421px) and (max-width: 580px) {
+  .mainGrid {
+    grid-template-columns: 95%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "parrafo " "foto";
+    margin: auto; }
+  .parrafo {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10vh; }
+  .parrafo:hover {
+    transform: scale(1, 1.1); }
+  .imagenNosotros {
+    min-width: 75vw; } }
+
+@media only screen and (min-width: 581px) {
+  /*NOSOTROS PAGINA*/
+  .mainGrid {
+    grid-template-columns: 95%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "parrafo " "foto";
+    margin: auto; }
+  .parrafo {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10vh; }
+  .parrafo:hover {
+    transform: scale(1, 1.1); }
+  .imagenNosotros {
+    min-width: 75vw; } }
+
+/*pagina PRODUCTOS CON GRID*/
+.grilla {
+  max-width: 90vw;
+  max-height: auto;
+  display: grid;
+  margin: auto;
+  margin-top: 35px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-areas: "foto1  texto1 foto4  texto4" "boton1 boton2 boton4 boton3" "texto2 foto2  texto3 foto3 ";
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  color: #212121; }
+
+.grilla__texto {
+  align-self: center;
+  text-align: justify;
+  font-size: 20px; }
+
+.grilla__texto:hover {
+  text-shadow: 3px 3px 5px #EEEEEE; }
+
+.caja1 {
+  justify-content: center;
+  grid-area: foto1; }
+
+.boton1 {
+  grid-area: boton1;
+  align-self: flex-start; }
+
+.grilla__texto--1 {
+  grid-area: texto1; }
+
+.caja2 {
+  grid-area: foto2; }
+
+.boton2 {
+  grid-area: boton2;
+  align-self: flex-end; }
+
+.grilla__texto--2 {
+  grid-area: texto2; }
+
+.caja3 {
+  grid-area: foto3; }
+
+.boton3 {
+  grid-area: boton3;
+  align-self: flex-end; }
+
+.grilla__texto--3 {
+  grid-area: texto3; }
+
+.caja4 {
+  grid-area: foto4; }
+
+.boton4 {
+  grid-area: boton4;
+  align-self: flex-start; }
+
+.grilla__texto--4 {
+  grid-area: texto4; }
+
+.boton {
+  padding: 6px;
+  font-size: 15px;
+  font-family: Alice;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  background-color: #2D4059;
+  color: #EEEEEE;
+  border-top: 4px groove #334756;
+  border-bottom: 3px groove #334756;
+  margin: 5px; }
+
+.boton:hover {
+  border-top: 4px groove #80ED99;
+  border-bottom: 4px groove #80ED99;
+  background-color: #2D4059; }
+
+.producto {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: Alice;
+  text-transform: uppercase; }
+
+/*FIN DE PRODUCTOS CON GRID*/
+/*Responsive*/
+@media only screen and (max-width: 375px) {
+  /*productos*/
+  .grilla {
+    width: 100%;
+    margin-top: 20px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-areas: "foto1 texto1" "boton1 boton1" "foto2 texto2" "boton2 boton2" "foto3 texto3" "boton3 boton3" "foto4 texto4" "boton4 boton4";
+    align-items: flex-start;
+    gap: 10px; }
+  .grilla__texto {
+    margin-right: 10px;
+    font-size: 16px; }
+  .boton {
+    padding: 4px;
+    margin: 5px; }
+  .boton2 {
+    align-self: flex-start; }
+  .boton3 {
+    align-self: flex-start; } }
+
+@media screen and (max-width: 560px) {
+  /*productos*/
+  .grilla {
+    width: 100%;
+    margin-top: 20px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-areas: "foto1 texto1" "boton1 boton1" "foto2 texto2" "boton2 boton2" "foto3 texto3" "boton3 boton3" "foto4 texto4" "boton4 boton4";
+    align-items: flex-start;
+    gap: 10px; }
+  .grilla__texto {
+    margin-right: 18px;
+    font-size: 18px; }
+  .boton {
+    padding: 4px;
+    margin: 5px; }
+  .boton2 {
+    align-self: flex-start; }
+  .boton3 {
+    align-self: flex-start; } }
+
+@media only screen and (max-width: 900px) {
+  /*productos*/
+  .grilla {
+    width: 100%;
+    margin-top: 20px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+    grid-template-areas: "foto1 texto1" "boton1 boton1" "foto2 texto2" "boton2 boton2" "foto3 texto3" "boton3 boton3" "foto4 texto4" "boton4 boton4";
+    align-items: flex-start;
+    gap: 10px; }
+  .grilla__texto {
+    margin-right: 18px;
+    font-size: 21px; }
+  .boton {
+    padding: 4px;
+    margin: 5px; }
+  .boton2 {
+    align-self: flex-start; }
+  .boton3 {
+    align-self: flex-start; } }
+
+/*GALERIA DE IMAGENES*/
+.galeria {
+  margin: 20px; }
+
+.galeriaGrilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "imagen1  imagen2 " "imagen3  imagen4" "imagen5  imagen6";
+  margin: 5%;
+  row-gap: 10px;
+  align-items: center; }
+
+.imagen1 {
+  grid-area: imagen1; }
+
+.imagen2 {
+  grid-area: imagen2; }
+
+.imagen3 {
+  grid-area: imagen3; }
+
+.imagen4 {
+  grid-area: imagen4; }
+
+.imagen5 {
+  grid-area: imagen5; }
+
+.imagen6 {
+  grid-area: imagen6; }
+
+.imagenOtras {
+  width: 70%;
+  height: auto;
+  padding: 6px 1px 30px 1px;
+  background-color: #EEEEEE; }
+
+.imagenOtras:hover {
+  box-shadow: 4px 4px 8px #082032; }
+
+/*- FIN OTRAS IMAGENES*/
+/*Responsive*/
+@media only screen and (max-width: 375px) {
+  /*GALERIA DE IMAGENES*/
+  .galeriaGrilla {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4" "imagen5" "imagen6"; }
+  .imagenOtras {
+    margin: auto;
+    width: 97%; } }
+
+@media only screen and (max-width: 667px) {
+  /*GALERIA DE IMAGENES*/
+  .galeriaGrilla {
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "imagen1  imagen2" "imagen3  imagen4" "imagen5  imagen6"; }
+  .imagenOtras {
+    margin: auto;
+    width: 90%; } }
