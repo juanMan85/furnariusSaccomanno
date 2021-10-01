@@ -201,7 +201,7 @@ body {
 
 /*FIN DE PAGINA NOSOTROS*/
 /*Responsive*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .tarjeta {
     display: flex;
     height: auto;
