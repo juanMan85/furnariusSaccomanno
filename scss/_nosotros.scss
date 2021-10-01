@@ -1,125 +1,72 @@
 /*NOSOTROS PAGINA*/
-.mainGrid{
-    display: grid;
+.mainNos{
+    
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    grid-template-columns: 50% 50%;
-    grid-template-rows:    1fr 1fr; 
-    grid-template-areas: "parrafo foto"
-                         "parrafo foto";
-     margin: 10px 50px;
-}
-    .parrafo{
-        font-family: $estilo-fuente-general;
-        font-size: 20px;
-        font-weight: lighter;
-        background-color: $color-fondo;
-        color: $color-claro;
-        text-align: center;
-        padding: 30px;
-        height: auto;
-        border-radius: 10px;
-        grid-area: parrafo;
-        transition:all 4s;
+  
     }
-    .parrafo:hover{
-        transform: scale(1.1,1.1);
-        box-shadow: 4px 4px 7px $sombra;
-    }
-    .imagenNosotros{
-        grid-area: foto;
-        width: 40%;
-        min-width:300px;
-        height: auto;
-        margin-left: 45px;
-        border-radius: 0px 10px 0px 20px;
-        padding: 2px;
-        background-color: $color-claro;
-        transition: all 4s;
+    .imagenFondoNos{
+        background-image: url(../Imagenes/fotoArticulos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
-    .imagenNosotros:hover{
-        transform: scale(1.1,1.1);
-        box-shadow: 4px 4px 7px $sombra;
-        width: 50%;  
+ 
+
+    @mixin tarjeta($ancho, $alto, $bgColor,$display) {
+        display: $display;
+        height: $alto;
+        width: $ancho;
+        background-color:$bgColor ;
+        margin: 15px;  
+        padding: 20px;
+        border-radius: 20px;   
+        
     }
+
+    .tarjeta{
+        @include tarjeta(70%,auto, $color-nos1,flex); 
+             
+    }
+    .tarjeta2{
+        @include tarjeta(70%,auto,$color-nos2,flex);
+       
+    }
+    .tarjeta3{
+        @include tarjeta(70%,auto,$color-nos3,flex);
+   
+    }
+    .imagenNos{
+            width: 40%;
+            height: auto;
+            padding: 1px;
+            background-color:$color-claro;   
+            border-radius: 8px; 
+            margin: 10px;   
+    } 
+ 
+    
 /*FIN DE PAGINA NOSOTROS*/
 /*Responsive*/
 
-@media (min-width: 250px)and (max-width: 420px) {
-
-    .mainGrid{
-        grid-template-columns: 100%;
-        grid-template-rows:    1fr 1fr; 
-        grid-template-areas: "parrafo "
-                            "foto";
-        margin:auto;
+@media only screen and (max-width: 700px) {
+    .tarjeta{
+        @include tarjeta(95%,auto, $color-nos1,flex); 
+             
     }
-    .parrafo{
-        font-size: 16px;
-        padding: 15px;
-        margin-top: 10vh;
+    .tarjeta2{
+        @include tarjeta(95%,auto,$color-nos2,flex);
+       
     }
-    .parrafo:hover{
-        transform: scale(1,1.1);
-    }
-    .imagenNosotros{
-        min-width:75vw;
-    }
-
-}
-
-
-@media (min-width: 421px)and (max-width: 580px) {
- 
+    .tarjeta3{
+        @include tarjeta(95%,auto,$color-nos3,flex);
    
-    .mainGrid{
-        grid-template-columns: 95%;
-        grid-template-rows:    1fr 1fr; 
-        grid-template-areas: "parrafo "
-                             "foto";
-        margin:auto;
     }
-    .parrafo{
-        font-size: 16px;
-        padding: 15px;
-        margin-top: 10vh;
-    }
-    .parrafo:hover{
-        transform: scale(1,1.1);
-    }
-    .imagenNosotros{
-        min-width:75vw;
-    }
-
-
+    .imagenNos{
+        width: 50%;  
+     }    
 }
-
-@media only screen and (min-width: 581px) {
-     
-    /*NOSOTROS PAGINA*/
-   
-    .mainGrid{
-        grid-template-columns: 95%;
-        grid-template-rows:    1fr 1fr; 
-        grid-template-areas: "parrafo "
-                             "foto";
-        margin:auto;
-    }
-    .parrafo{
-        font-size: 16px;
-        padding: 15px;
-        margin-top: 10vh;
-    }
-    .parrafo:hover{
-        transform: scale(1,1.1);
-    }
-    .imagenNosotros{
-        min-width:75vw;
-    }
-
-  
-}
-
 
 
