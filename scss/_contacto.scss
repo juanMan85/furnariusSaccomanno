@@ -65,44 +65,30 @@ textarea:hover{
 
 /*Responsive*/
 
-@media (min-width: 250px)and (max-width: 420px) {
 
-    
+@media only screen and (max-width: 581px) {
     .contacto__texto{
         font-size: 25px;
     }
     .contacto__texto--italica{
         font-size: 18px;
     }
-
 }
 
-
-@media (min-width: 421px)and (max-width: 580px) {
-   
-    /* CUADRO DE PAGINA CONTACTO*/
-
+@media only screen and (max-width: 440px) { 
     .contacto__texto{
-        font-size: 25px;
+        font-size: 20px;
     }
     .contacto__texto--italica{
-        font-size: 18px;
+        font-size: 16px;
     }
-
 }
 
-@media only screen and (min-width: 581px) {
-
-    /* CUADRO DE PAGINA CONTACTO*/
-
+@media only screen and (max-width: 376px) {
     .contacto__texto{
-        font-size: 25px;
+        font-size: 17px;
     }
     .contacto__texto--italica{
-        font-size: 18px;
+        font-size: 13px;
     }
-
 }
-
-
-

@@ -97,9 +97,78 @@
 
 /*Responsive*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 900px) {
+    .grilla{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "boton1 boton1"
+                            "foto2 texto2"
+                            "boton2 boton2"
+                            "foto3 texto3"
+                            "boton3 boton3"
+                            "foto4 texto4"
+                            "boton4 boton4";          
+        align-items: flex-start; 
+        gap: 10px;
+        
+    }
+    .grilla__texto{
+        margin-right: 18px;
+        font-size: 21px;   
+    }
+     
+    .boton{
+        padding: 4px;
+        margin: 5px;
+    }
+    .boton2{
+        align-self: flex-start;
+    }
+    .boton3{
+        align-self: flex-start;
+    }
+}
 
-    /*productos*/
+@media screen and (max-width: 660px) {
+
+    .grilla{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "boton1 boton1"
+                            "foto2 texto2"
+                            "boton2 boton2"
+                            "foto3 texto3"
+                            "boton3 boton3"
+                            "foto4 texto4"
+                            "boton4 boton4";          
+        align-items: flex-start; 
+        gap: 10px;   
+    }
+    .grilla__texto{
+        margin-right: auto;
+        font-size: 18px;
+    }
+     
+    .boton{
+        padding: 4px;
+        margin: 5px;
+    }
+    .boton2{
+        align-self: flex-start;
+    }
+    .boton3{
+        align-self: flex-start;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
     .grilla{
         width: 100%;
         margin-top: 20px;
@@ -119,49 +188,10 @@
     }
     .grilla__texto{
         margin-right: 10px;
-        font-size: 16px;
-    }
-     
-    .boton{
-        padding: 4px;
-        margin: 5px;
-    }
-    .boton2{
-        align-self: flex-start;
-    }
-    .boton3{
+        font-size: 13px;
         align-self: flex-start;
     }
    
-  
-}
-
-
-@media screen and (max-width: 560px) {
-   
-    /*productos*/
- 
-    .grilla{
-        width: 100%;
-        margin-top: 20px;
-        grid-template-columns: 55% 45%;
-        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-        grid-template-areas:"foto1 texto1"
-                            "boton1 boton1"
-                            "foto2 texto2"
-                            "boton2 boton2"
-                            "foto3 texto3"
-                            "boton3 boton3"
-                            "foto4 texto4"
-                            "boton4 boton4";          
-        align-items: flex-start; 
-        gap: 10px;
-       
-    }
-    .grilla__texto{
-        margin-right: 18px;
-        font-size: 18px;
-    }
      
     .boton{
         padding: 4px;
@@ -172,47 +202,5 @@
     }
     .boton3{
         align-self: flex-start;
-    }   
-
+    } 
 }
-
-@media only screen and (max-width: 900px) {
-         /*productos*/
- 
-    .grilla{
-        width: 100%;
-        margin-top: 20px;
-        grid-template-columns: 55% 45%;
-        grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-        grid-template-areas:"foto1 texto1"
-                            "boton1 boton1"
-                            "foto2 texto2"
-                            "boton2 boton2"
-                            "foto3 texto3"
-                            "boton3 boton3"
-                            "foto4 texto4"
-                            "boton4 boton4";          
-        align-items: flex-start; 
-        gap: 10px;
-        
-    }
-    .grilla__texto{
-        margin-right: 18px;
-        font-size: 21px;
-    }
-     
-    .boton{
-        padding: 4px;
-        margin: 5px;
-    }
-    .boton2{
-        align-self: flex-start;
-    }
-    .boton3{
-        align-self: flex-start;
-    }
-}
-
-
-
-

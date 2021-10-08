@@ -1,72 +1,119 @@
 /*NOSOTROS PAGINA*/
 .mainNos{
-    
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: center;
-  
+    align-items: center;  
+    }
+    .bodyFlexNos{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between; 
     }
     .imagenFondoNos{
         background-image: url(../Imagenes/fotoArticulos.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
- 
-
-    @mixin tarjeta($ancho, $alto, $bgColor,$display) {
+    .conte{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+   /*mixin*/
+    @mixin tarjeta($ancho, $alto, $bgColor,$display,$fontSize) {
         display: $display;
         height: $alto;
         width: $ancho;
         background-color:$bgColor ;
-        margin: 15px;  
+        margin: auto;  
         padding: 20px;
-        border-radius: 20px;   
-        
+        border-radius: 20px; 
+        margin-top: 1rem;  
+        justify-content: space-around;
+        font-size: $fontSize;
+        text-align: center;
+        font-weight: bold;             
     }
 
     .tarjeta{
-        @include tarjeta(70%,auto, $color-nos1,flex); 
+        @include tarjeta(80vw,auto, $color-nos1,flex,20px); 
              
     }
     .tarjeta2{
-        @include tarjeta(70%,auto,$color-nos2,flex);
+        @include tarjeta(80vw,auto,$color-nos2,flex,20px);
        
     }
     .tarjeta3{
-        @include tarjeta(70%,auto,$color-nos3,flex);
-   
+        @include tarjeta(80vw,auto,$color-nos3,flex,20px);
     }
     .imagenNos{
-            width: 40%;
+            width: 100%;     
             height: auto;
-            padding: 1px;
             background-color:$color-claro;   
-            border-radius: 8px; 
-            margin: 10px;   
-    } 
+            border-radius: 5px;
+            box-shadow: 2px, 2px, 4px, $sombra;
+    }
+    .img-container{ 
+        max-width: 20vw;
+    }
  
     
 /*FIN DE PAGINA NOSOTROS*/
 /*Responsive*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
     .tarjeta{
-        @include tarjeta(95%,auto, $color-nos1,flex); 
-             
+        @include tarjeta(98%,auto, $color-nos1,flex,16px);          
     }
     .tarjeta2{
-        @include tarjeta(95%,auto,$color-nos2,flex);
-       
+        @include tarjeta(98%,auto,$color-nos2,flex,16px);
     }
     .tarjeta3{
-        @include tarjeta(95%,auto,$color-nos3,flex);
-   
+        @include tarjeta(98%,auto,$color-nos3,flex,16px);
     }
-    .imagenNos{
-        width: 50%;  
-     }    
 }
 
+@media only screen and (max-width: 700px) {
+    .tarjeta{
+        @include tarjeta(98%,auto, $color-nos1,flex,14px); 
+    }
+    .tarjeta2{
+        @include tarjeta(98%,auto,$color-nos2,flex,14px);
+    }
+    .tarjeta3{
+        @include tarjeta(98%,auto,$color-nos3,flex,14px);
+    }
+}
 
+@media only screen and (max-width: 570px) {
+    .tarjeta{
+        @include tarjeta(98%,auto, $color-nos1,flex,12px);              
+    }
+    .tarjeta2{
+        @include tarjeta(98%,auto,$color-nos2,flex,12px);
+    }
+    .tarjeta3{
+        @include tarjeta(98%,auto,$color-nos3,flex,12px);
+    }   
+}
+
+@media only screen and (max-width: 414px) {
+    .tarjeta{
+        @include tarjeta(98%,auto, $color-nos1,flex,13px); 
+    }
+    .tarjeta2{
+        @include tarjeta(98%,auto,$color-nos2,flex,13px);
+    }
+    .tarjeta3{
+        @include tarjeta(98%,auto,$color-nos3,flex,13px);
+    }
+    .imagenNos{
+        display: none;
+     }  
+     .conte{   
+        flex-direction: column;  
+    }   
+}
