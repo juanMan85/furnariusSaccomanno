@@ -50,14 +50,17 @@
         @include tarjeta(80vw,auto,$color-nos3,flex,20px);
     }
     .imagenNos{
-            width: 100%;     
+            width: 80%;     
             height: auto;
             background-color:$color-claro;   
             border-radius: 5px;
             box-shadow: 2px, 2px, 4px, $sombra;
     }
     .img-container{ 
-        max-width: 20vw;
+        max-width: 40%;
+    }
+    .tarjeta-texto{
+        max-width: 60%;
     }
  
     
@@ -115,5 +118,9 @@
      }  
      .conte{   
         flex-direction: column;  
-    }   
+    }  
+
+    .tarjeta-texto{
+        max-width: 90%;
+    } 
 }
